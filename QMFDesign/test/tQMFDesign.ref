@@ -1,0 +1,33 @@
+Filter coefficients:
+ans =
+  Columns 1 through 9
+    0.0013   -0.0023   -0.0016    0.0058    0.0013   -0.0116    0.0007    0.0202   -0.0058
+  Columns 10 through 18
+   -0.0331    0.0168    0.0539   -0.0417   -0.0997    0.1306    0.4651    0.4651    0.1306
+  Columns 19 through 27
+   -0.0997   -0.0417    0.0539    0.0168   -0.0331   -0.0058    0.0202    0.0007   -0.0116
+  Columns 28 through 32
+    0.0013    0.0058   -0.0016   -0.0023    0.0013
+Maximum overall ripple: 0.0149325 dB
+Minimum stopband attenuation: 44.1926 dB
+Stopband edge: 0.30325
+
+Check ripple computation (all should be equal)
+Sum of squares (n ~= N-1): 5.34059e-007
+Sum of squares, conv. matrix (n ~= N-1): 5.34059e-007
+Sum of squares (n ~= 2k & n ~= N-1): 5.34059e-007
+Sum of squares (n ~= 2k & n ~= N-1): 5.34059e-007
+
+Reference coefficients (from Jain/Crochiere paper):
+ans =
+  Columns 1 through 9
+    0.0012   -0.0023   -0.0016    0.0059    0.0013   -0.0116    0.0007    0.0202   -0.0058
+  Columns 10 through 18
+   -0.0331    0.0168    0.0539   -0.0418   -0.0997    0.1306    0.4651    0.4651    0.1306
+  Columns 19 through 27
+   -0.0997   -0.0418    0.0539    0.0168   -0.0331   -0.0058    0.0202    0.0007   -0.0116
+  Columns 28 through 32
+    0.0013    0.0059   -0.0016   -0.0023    0.0012
+Maximum overall ripple: 0.015315 dB
+Minimum stopband attenuation: 44.1946 dB
+Stopband edge: 0.30325
